@@ -1,0 +1,121 @@
+ticker,date,date_precision,window_start,window_end,event,event_id,direction,source,note
+ARX.TO,2026-09-29,past,,,LNG Canada Phase 2 FID done Sep 29,E06,gain,boom_candidates.csv,Canadian LNG growth
+PEY.TO,2026-09-29,past,,,LNG Canada Phase 2 FID done Sep 29,E06,gain,boom_candidates.csv,Canadian LNG growth
+TOU.TO,2026-09-29,past,,,LNG Canada Phase 2 FID done Sep 29,E06,gain,boom_candidates.csv,Canadian LNG growth
+TRP,2026-09-29,past,,,LNG Canada Phase 2 FID done Sep 29,E06,gain,boom_candidates.csv,Canadian LNG growth
+TRP.TO,2026-09-29,past,,,LNG Canada Phase 2 FID done Sep 29,E06,gain,boom_candidates.csv,Canadian LNG growth
+KTOS,,window,2026-10-01,2026-12-31,Oct-Dec 2026 appropriations,P10,gain,boom_candidates.csv,US defense build-up
+LHX,,window,2026-10-01,2026-12-31,Oct-Dec 2026 appropriations,P10,gain,boom_candidates.csv,US defense build-up
+LMT,,window,2026-10-01,2026-12-31,Oct-Dec 2026 appropriations,P10,gain,boom_candidates.csv,US defense build-up
+NVTS,,window,2026-10-01,2026-12-31,Oct-Dec 2026 appropriations,P10,gain,boom_candidates.csv,US defense build-up
+OLN,,window,2026-10-01,2026-12-31,Oct-Dec 2026 appropriations,P10,gain,boom_candidates.csv,US defense build-up
+RTX,,window,2026-10-01,2026-12-31,Oct-Dec 2026 appropriations,P10,gain,boom_candidates.csv,US defense build-up
+TCS.NS,2026-10-08,exact,,,TCS Q2 FY27 results (H-1B / onsite-cost commentary),E08,lose,confirmed date,"board meeting Oct 8; read-through for INFY, WIT, CTSH, ACN"
+HCLTECH.NS,2026-10-12,exact,,,HCLTech Q2 FY27 results,E08,lose,confirmed date,"board meeting Oct 12, expected after Indian market hours"
+300308.SZ,2026-10-13,exact,,,FCC covered-entity component rule takes effect (does it catch optical transceivers?),E01,lose,exposures.csv,status DRAFT_ADD
+300502.SZ,2026-10-13,exact,,,FCC covered-entity component rule takes effect (does it catch optical transceivers?),E01,lose,exposures.csv,status DRAFT_ADD
+AAOI,2026-10-13,exact,,,FCC covered-entity component rule takes effect (does it catch optical transceivers?),E01,gain,exposures.csv,status PARK
+AXTI,2026-10-13,exact,,,FCC covered-entity component rule takes effect (does it catch optical transceivers?),E01,gain,exposures.csv,status PARK
+CIEN,2026-10-13,exact,,,FCC covered-entity component rule takes effect (does it catch optical transceivers?),E01,gain,exposures.csv,status DRAFT_ADD
+COHR,2026-10-13,exact,,,FCC covered-entity component rule takes effect (does it catch optical transceivers?),E01,gain,exposures.csv,status PARK
+CRDO,2026-10-13,exact,,,FCC covered-entity component rule takes effect (does it catch optical transceivers?),E01,gain,boom_candidates.csv,AI optics bottleneck
+FN,2026-10-13,exact,,,FCC covered-entity component rule takes effect (does it catch optical transceivers?),E01,gain,exposures.csv,status DRAFT_ADD
+IQE.L,2026-10-13,exact,,,FCC covered-entity component rule takes effect (does it catch optical transceivers?),E01,gain,boom_candidates.csv,AI optics bottleneck
+LITE,2026-10-13,exact,,,FCC covered-entity component rule takes effect (does it catch optical transceivers?),E01,gain,exposures.csv,status PARK
+MXL,2026-10-13,exact,,,FCC covered-entity component rule takes effect (does it catch optical transceivers?),E01,gain,exposures.csv,status PARK
+RTX,2026-10-13,exact,,,FCC covered-entity component rule takes effect (does it catch optical transceivers?),E01,,exposures.csv,status FOLLOW
+SIVE.ST,2026-10-13,exact,,,FCC covered-entity component rule takes effect (does it catch optical transceivers?),E01,gain,exposures.csv,status PARK
+SMTC,2026-10-13,exact,,,FCC covered-entity component rule takes effect (does it catch optical transceivers?),E01,gain,exposures.csv,status PARK
+TSEM,2026-10-13,exact,,,FCC covered-entity component rule takes effect (does it catch optical transceivers?),E01,gain,boom_candidates.csv,AI optics bottleneck
+WIT,2026-10-15,exact,,,Wipro Q2 FY27 results,E08,lose,confirmed date,after Indian market hours Oct 15 (before the US open)
+000660.KS,,window,2026-10-21,2026-10-31,Samsung/SK hynix Q3 (late Oct 2026),P02,gain,boom_candidates.csv,AI memory supercycle
+005930.KS,,window,2026-10-21,2026-10-31,Samsung/SK hynix Q3 (late Oct 2026),P02,gain,boom_candidates.csv,AI memory supercycle
+3006.TW,,window,2026-10-21,2026-10-31,Samsung/SK hynix Q3 (late Oct 2026),P02,gain,boom_candidates.csv,AI memory supercycle
+F,,window,2026-10-21,2026-10-31,GM/F Q3 reports late Oct 2026 (TBC),P11,gain,boom_candidates.csv,Trump-named EV/auto trade
+GM,,window,2026-10-21,2026-10-31,GM/F Q3 reports late Oct 2026 (TBC),P11,gain,boom_candidates.csv,Trump-named EV/auto trade
+LRCX,,window,2026-10-21,2026-10-31,Samsung/SK hynix Q3 (late Oct 2026),P02,gain,boom_candidates.csv,AI memory supercycle
+MU,,window,2026-10-21,2026-10-31,Samsung/SK hynix Q3 (late Oct 2026),P02,gain,boom_candidates.csv,AI memory supercycle
+STLA,,window,2026-10-21,2026-10-31,GM/F Q3 reports late Oct 2026 (TBC),P11,gain,boom_candidates.csv,Trump-named EV/auto trade
+INFY,2026-10-23,exact,,,Infosys Q2 FY27 results,E08,lose,confirmed date,board meets Oct 22-23; call Oct 23
+AAOI,,window,2026-11-01,2026-11-10,"LITE & COHR fiscal Q1 reports (early Nov 2026, dates TBC)",P01,gain,boom_candidates.csv,AI optics bottleneck
+AKAM,,month,2026-11-01,2026-11-30,Q3 reports Nov 2026 (TBC),P03,gain,boom_candidates.csv,Neoclouds & AI compute
+AXTI,,window,2026-11-01,2026-11-10,"LITE & COHR fiscal Q1 reports (early Nov 2026, dates TBC)",P01,gain,boom_candidates.csv,AI optics bottleneck
+BAM,,month,2026-11-01,2026-11-30,"BN Q3 results (Nov 2026, TBC)",E04,gain,boom_candidates.csv,Brookfield DE growth
+BE,,month,2026-11-01,2026-11-30,Q3 reports Nov 2026 (TBC),P04,gain,boom_candidates.csv,AI power
+BN,,month,2026-11-01,2026-11-30,"BN Q3 results (Nov 2026, TBC)",E04,gain,boom_candidates.csv,Brookfield DE growth
+BWXT,,month,2026-11-01,2026-11-30,Q3 reports Nov 2026 (TBC),P04,gain,boom_candidates.csv,AI power
+CCJ,,month,2026-11-01,2026-11-30,Q3 reports Nov 2026 (TBC),P04,gain,boom_candidates.csv,AI power
+CEG,,month,2026-11-01,2026-11-30,Q3 reports Nov 2026 (TBC),P04,gain,boom_candidates.csv,AI power
+CNQ.TO,,window,2026-11-01,2026-11-10,Q3 reports early Nov 2026,P07,gain,boom_candidates.csv,Canadian oil sands + BC oil pipeline
+COHR,,window,2026-11-01,2026-11-10,"LITE & COHR fiscal Q1 reports (early Nov 2026, dates TBC)",P01,gain,boom_candidates.csv,AI optics bottleneck
+CRDO,,window,2026-11-01,2026-11-10,"LITE & COHR fiscal Q1 reports (early Nov 2026, dates TBC)",P01,gain,boom_candidates.csv,AI optics bottleneck
+CVE.TO,,window,2026-11-01,2026-11-10,Q3 reports early Nov 2026,P07,gain,boom_candidates.csv,Canadian oil sands + BC oil pipeline
+FN,,window,2026-11-01,2026-11-10,"LITE & COHR fiscal Q1 reports (early Nov 2026, dates TBC)",P01,gain,boom_candidates.csv,AI optics bottleneck
+GEV,,month,2026-11-01,2026-11-30,Q3 reports Nov 2026 (TBC),P04,gain,boom_candidates.csv,AI power
+IQE.L,,window,2026-11-01,2026-11-10,"LITE & COHR fiscal Q1 reports (early Nov 2026, dates TBC)",P01,gain,boom_candidates.csv,AI optics bottleneck
+LITE,,window,2026-11-01,2026-11-10,"LITE & COHR fiscal Q1 reports (early Nov 2026, dates TBC)",P01,gain,boom_candidates.csv,AI optics bottleneck
+OKLO,,month,2026-11-01,2026-11-30,Q3 reports Nov 2026 (TBC),P04,gain,boom_candidates.csv,AI power
+PPL.TO,,window,2026-11-01,2026-11-10,Q3 reports early Nov 2026,P07,gain,boom_candidates.csv,Canadian oil sands + BC oil pipeline
+SCR.TO,,window,2026-11-01,2026-11-10,Q3 reports early Nov 2026,P07,gain,boom_candidates.csv,Canadian oil sands + BC oil pipeline
+SIVE.ST,,window,2026-11-01,2026-11-10,"LITE & COHR fiscal Q1 reports (early Nov 2026, dates TBC)",P01,gain,boom_candidates.csv,AI optics bottleneck
+SU.TO,,window,2026-11-01,2026-11-10,Q3 reports early Nov 2026,P07,gain,boom_candidates.csv,Canadian oil sands + BC oil pipeline
+TSEM,,window,2026-11-01,2026-11-10,"LITE & COHR fiscal Q1 reports (early Nov 2026, dates TBC)",P01,gain,boom_candidates.csv,AI optics bottleneck
+UUUU,,month,2026-11-01,2026-11-30,Q3 reports Nov 2026 (TBC),P04,gain,boom_candidates.csv,AI power
+VST,,month,2026-11-01,2026-11-30,Q3 reports Nov 2026 (TBC),P04,gain,boom_candidates.csv,AI power
+000660.KS,,window,2026-12-11,2026-12-20,"MU FQ1 (mid-Dec 2026, TBC)",P02,gain,boom_candidates.csv,AI memory supercycle
+005930.KS,,window,2026-12-11,2026-12-20,"MU FQ1 (mid-Dec 2026, TBC)",P02,gain,boom_candidates.csv,AI memory supercycle
+3006.TW,,window,2026-12-11,2026-12-20,"MU FQ1 (mid-Dec 2026, TBC)",P02,gain,boom_candidates.csv,AI memory supercycle
+LRCX,,window,2026-12-11,2026-12-20,"MU FQ1 (mid-Dec 2026, TBC)",P02,gain,boom_candidates.csv,AI memory supercycle
+MU,,window,2026-12-11,2026-12-20,"MU FQ1 (mid-Dec 2026, TBC)",P02,gain,boom_candidates.csv,AI memory supercycle
+CRML,,window,,2026-12-29,90-day window to ~Dec 29 2026,P06,gain,boom_candidates.csv,Govt stakes in rare earths
+LAC,,window,,2026-12-29,90-day window to ~Dec 29 2026,P06,gain,boom_candidates.csv,Govt stakes in rare earths
+MP,,window,,2026-12-29,90-day window to ~Dec 29 2026,P06,gain,boom_candidates.csv,Govt stakes in rare earths
+TMQ,,window,,2026-12-29,90-day window to ~Dec 29 2026,P06,gain,boom_candidates.csv,Govt stakes in rare earths
+USAR,,window,,2026-12-29,90-day window to ~Dec 29 2026,P06,gain,boom_candidates.csv,Govt stakes in rare earths
+CS.TO,,window,,2026-12-31,Sec. 232 copper-cable tariff decision (Polymarket 30% by Dec 31),P08,gain,boom_candidates.csv,Copper supercycle
+ERO,,window,,2026-12-31,Sec. 232 copper-cable tariff decision (Polymarket 30% by Dec 31),P08,gain,boom_candidates.csv,Copper supercycle
+FCX,,window,,2026-12-31,Sec. 232 copper-cable tariff decision (Polymarket 30% by Dec 31),P08,gain,boom_candidates.csv,Copper supercycle
+HBM,,window,,2026-12-31,Sec. 232 copper-cable tariff decision (Polymarket 30% by Dec 31),P08,gain,boom_candidates.csv,Copper supercycle
+PGLD.V,,window,,2026-12-31,Sec. 232 copper-cable tariff decision (Polymarket 30% by Dec 31),P08,gain,boom_candidates.csv,Copper supercycle
+SCCO,,window,,2026-12-31,Sec. 232 copper-cable tariff decision (Polymarket 30% by Dec 31),P08,gain,boom_candidates.csv,Copper supercycle
+SPCX,,window,,2026-12-31,by Dec 31 2026,P05,gain,boom_candidates.csv,SpaceX/xAI compute
+TECK,,window,,2026-12-31,Sec. 232 copper-cable tariff decision (Polymarket 30% by Dec 31),P08,gain,boom_candidates.csv,Copper supercycle
+ACN,,unknown,,,Indian IT results read-through (own date not confirmed),E08,mixed,exposures.csv,status DRAFT_ADD
+ARX.TO,,unknown,,,Ksi Lisims FID TBD,E06,gain,boom_candidates.csv,Canadian LNG growth
+ARX.TO,,unknown,,,Q3 reports Nov,E06,gain,boom_candidates.csv,Canadian LNG growth
+ASST,,rolling,,,rolling,P09,gain,boom_candidates.csv,Crypto cycle & treasury proxies
+ASST,,unknown,,,Polymarket: BTC >$100k in Oct 9.5%,P09,gain,boom_candidates.csv,Crypto cycle & treasury proxies
+CNQ.TO,,rolling,,,rolling,P07,gain,boom_candidates.csv,Canadian oil sands + BC oil pipeline
+CRML,,rolling,,,rolling,P06,gain,boom_candidates.csv,Govt stakes in rare earths
+CS.TO,,rolling,,,LME copper,P08,gain,boom_candidates.csv,Copper supercycle
+CTSH,,unknown,,,Indian IT results read-through (own date not confirmed),E08,lose,exposures.csv,status DRAFT_ADD
+CVE.TO,,rolling,,,rolling,P07,gain,boom_candidates.csv,Canadian oil sands + BC oil pipeline
+CYPH,,rolling,,,rolling,P09,gain,boom_candidates.csv,Crypto cycle & treasury proxies
+CYPH,,unknown,,,Polymarket: BTC >$100k in Oct 9.5%,P09,gain,boom_candidates.csv,Crypto cycle & treasury proxies
+ERO,,rolling,,,LME copper,P08,gain,boom_candidates.csv,Copper supercycle
+FCX,,rolling,,,LME copper,P08,gain,boom_candidates.csv,Copper supercycle
+HBM,,rolling,,,LME copper,P08,gain,boom_candidates.csv,Copper supercycle
+INFQ,,rolling,,,rolling,E05,gain,boom_candidates.csv,Quantum computing
+LAC,,rolling,,,rolling,P06,gain,boom_candidates.csv,Govt stakes in rare earths
+MP,,rolling,,,rolling,P06,gain,boom_candidates.csv,Govt stakes in rare earths
+MSTR,,rolling,,,rolling,P09,gain,boom_candidates.csv,Crypto cycle & treasury proxies
+MSTR,,unknown,,,Polymarket: BTC >$100k in Oct 9.5%,P09,gain,boom_candidates.csv,Crypto cycle & treasury proxies
+PEY.TO,,unknown,,,Ksi Lisims FID TBD,E06,gain,boom_candidates.csv,Canadian LNG growth
+PEY.TO,,unknown,,,Q3 reports Nov,E06,gain,boom_candidates.csv,Canadian LNG growth
+PGLD.V,,rolling,,,LME copper,P08,gain,boom_candidates.csv,Copper supercycle
+PLTR,,unknown,,,Senate timing TBC,P12,gain,boom_candidates.csv,DOJ Fraud Division codified
+PPL.TO,,rolling,,,rolling,P07,gain,boom_candidates.csv,Canadian oil sands + BC oil pipeline
+QBTS,,rolling,,,rolling,E05,gain,boom_candidates.csv,Quantum computing
+RGTI,,rolling,,,rolling,E05,gain,boom_candidates.csv,Quantum computing
+SCCO,,rolling,,,LME copper,P08,gain,boom_candidates.csv,Copper supercycle
+SCR.TO,,rolling,,,rolling,P07,gain,boom_candidates.csv,Canadian oil sands + BC oil pipeline
+SU.TO,,rolling,,,rolling,P07,gain,boom_candidates.csv,Canadian oil sands + BC oil pipeline
+TECK,,rolling,,,LME copper,P08,gain,boom_candidates.csv,Copper supercycle
+TMQ,,rolling,,,rolling,P06,gain,boom_candidates.csv,Govt stakes in rare earths
+TOU.TO,,unknown,,,Ksi Lisims FID TBD,E06,gain,boom_candidates.csv,Canadian LNG growth
+TOU.TO,,unknown,,,Q3 reports Nov,E06,gain,boom_candidates.csv,Canadian LNG growth
+TRP,,unknown,,,Ksi Lisims FID TBD,E06,gain,boom_candidates.csv,Canadian LNG growth
+TRP,,unknown,,,Q3 reports Nov,E06,gain,boom_candidates.csv,Canadian LNG growth
+TRP.TO,,unknown,,,Ksi Lisims FID TBD,E06,gain,boom_candidates.csv,Canadian LNG growth
+TRP.TO,,unknown,,,Q3 reports Nov,E06,gain,boom_candidates.csv,Canadian LNG growth
+USAR,,rolling,,,rolling,P06,gain,boom_candidates.csv,Govt stakes in rare earths
