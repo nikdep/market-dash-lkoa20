@@ -25,6 +25,9 @@ nothing is estimated or filled in. Prices come from Yahoo's chart endpoint (unof
 | base_post_et, base_handle | the post the baseline is measured from |
 | market_cap_usd_b, avg_dollar_vol_m | size and liquidity |
 | main_risk | one-line risk |
+| base_date, base_close, last_date, last_close, currency | price at the post (first close at/after it) and latest close, listing currency |
+| chg_per_share | last_close - base_close |
+| usd_1k_now, usd_1k_spy_now | hypothetical: what $1,000 bought at base_close is worth now; same in SPY over the same dates |
 
 ## catalysts.json : dated triggers per ticker
 | field | meaning |
@@ -46,13 +49,15 @@ nothing is estimated or filled in. Prices come from Yahoo's chart endpoint (unof
 | posts, first_post, last_post, narratives | activity |
 | jev.testable / predictions / factual / opinion | Jev triage counts of the account's posts |
 | daily.* | named tickers from the first close after each post to the latest close vs SPY (assumes bullish mention) |
+| daily.usd_invested_1k, usd_pnl_1k, usd_spy_pnl_1k | hypothetical: $1,000 into each priced post x ticker (tickers_priced of them) at the first close after the post, held to the latest close: total stake, $ profit/loss, and the same $1,000 per call in SPY |
+| intraday.<h>.usd_pnl_1k / usd_spy_pnl_1k | hypothetical $ profit/loss of $1,000 per post x ticker bought at base_price and sold at horizon h; same in SPY |
 | intraday.<h>.n / mean_excess_pct / median_excess_pct / hit_rate_pct | h in `5m`, `15m`, `1h`, `1d`, `close`; excess = ticker minus SPY over the same minutes; hit = excess > 0 |
 | intraday_rows, intraday_intervals | post x ticker pairs and bar sizes used (`1m:23 5m:3`) |
 
 ## posts.json : latest posts, newest first
 | field | meaning |
 |---|---|
-| source | `x` (posts you sent), `x-alert` (new post found by the watcher), `telegram` (AzazelNews stock picks, last 30 days) |
+| source | `x` (posts you sent), `x-followed` (a followed account's timeline, e.g. @QuiverQuant), `x-alert` (new post found by the watcher), `telegram` (AzazelNews stock picks, last 30 days) |
 | handle, post_id, url | |
 | posted_at_et, posted_epoch | post time (X: decoded from the post ID, to the second) |
 | sent_at_et | when you sent it into the Grok chat |
@@ -62,11 +67,14 @@ nothing is estimated or filled in. Prices come from Yahoo's chart endpoint (unof
 | jev.kind_conf, specificity (0-4), domain, confidence (0-3), deadline | Jev triage |
 | jev.testable | `yes` (prediction, conf >= 0.6, specificity >= 2), `review`, `no` |
 | narrative_id, narrative, engagement.* | grouping and likes/reposts/views/followers at fetch time |
+| since_post | JSON only: per ticker `{ticker, symbol, currency, base_date, base_close, last_date, last_close, chg_per_share, ret_pct, spy_pct, excess_pct}` (first close at/after the post -> latest close) |
+| since_post_text | same as one readable line (CSV too) |
 
 ## reactions.csv (X posts) and reactions_telegram.csv (AzazelNews) : one row per post x ticker (CSV only)
 `interval` = bar size used (finest available for the post's age: 1m < ~30 days, 5m < ~60 days, 60m older).
 `base_time_et`/`base_price` = open of the first bar at/after the post (next open if posted outside the session; `post_in_session`).
 `ret_<h>` / `ex_<h>` = % return and excess over SPY for h in 5m, 15m, 1h (trading time, rolls into the next session), 1d (next session's close), close (same session's close).
+`price_1h` / `price_1d` / `price_close` = implied price at that horizon (base_price x (1 + ret)); $ change per share = price_h - base_price.
 `vol_spike` = volume in the first 15 min (5m bars) or 60 min (60m bars) after base / average of the same time-of-day window over up to 20 prior sessions (`vol_baseline_days`).
 `data_note` explains blanks. Use it for event studies: no look-ahead, every return starts after the post.
 
