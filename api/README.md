@@ -20,7 +20,11 @@ nothing is estimated or filled in. Prices come from Yahoo's chart endpoint (unof
 | jev_impact | -1..+1 Jev score (direction x directness x size x not priced in) |
 | jev_priced_in | 0..1 Jev read of how much the market already expects |
 | jev_order, jev_horizon | first/second order link; days/weeks/months/years |
-| boom_score, upside_score | current ranking score (upside first): 0.45 payoff vs size + 0.25 room to run + 0.10 dated catalyst + 0.20 trend, x0.6 late call, x0.75 price broken, x0.97-1.03 source grade |
+| rank, status, filter_reason | v4 combined ranking: `confirmed` (ranked by combined.up_risk_ratio) then `waiting` (by combined score) then `filtered` (watchlist, with reason) |
+| combined.* | combined_score, confirmed_date/how (5%+ day on 1.5x volume or close above 20-day high), stop/stop_how/risk_pct (story-wrong stop: tighter of 1% below pre-call low and 2x ATR14), upside_est_pct/src (half 52-wk high + half analyst mean, capped), up_risk_ratio, analysts_used, days_since_call |
+| rank_upside | rank under the v3 upside-first score |
+| boom_score | v4 combined score |
+| upside_score | v3 upside score: 0.45 payoff vs size + 0.25 room to run + 0.10 dated catalyst + 0.20 trend, x0.6 late call, x0.75 price broken, x0.97-1.03 source grade |
 | upside.bull_pct, upside.bull_src | bull-case % move and its basis (analyst high target, or back to the 52-week high) |
 | upside.base_pct, upside.below_52w_high_pct, upside.to_target_pct, upside.n_analysts, upside.short_pct_float, upside.days_to_cover | Yahoo (yfinance) analyst/52-week/short data |
 | upside.catalyst_date, upside.catalyst_label, upside.days_to_catalyst | nearest dated catalyst (company earnings date from Yahoo or a confirmed story date) |
