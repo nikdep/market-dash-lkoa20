@@ -1,0 +1,61 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><meta name="robots" content="noindex, nofollow"><meta name="color-scheme" content="dark"><meta name="theme-color" content="#0d1117"><title>Market dashboard</title><style>
+:root{--bg:#0d1117;--card:#161b22;--line:#30363d;--fg:#e6edf3;--mut:#8b949e;--pos:#3fb950;--neg:#f85149;--acc:#58a6ff;--warn:#d29922}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:96px}
+body{margin:0;background:var(--bg);color:var(--fg);font:14px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-text-size-adjust:100%}
+header{position:sticky;top:0;z-index:5;background:rgba(13,17,23,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(6px)}
+.hwrap{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center;padding:10px 16px 6px;max-width:1200px;margin:auto}
+h1{margin:0;font-size:20px}.sub{color:var(--mut);font-size:12px}
+.kpis{display:flex;gap:8px}.kpi{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:6px 10px;text-align:center;min-width:86px}
+.kv{font-size:18px;font-weight:700;color:var(--acc)}.kl{font-size:10.5px;color:var(--mut);line-height:1.2}
+nav{display:flex;gap:4px;overflow-x:auto;padding:4px 12px 8px;max-width:1200px;margin:auto;scrollbar-width:none}
+nav a{color:var(--fg);text-decoration:none;font-size:12.5px;padding:4px 10px;border:1px solid var(--line);border-radius:99px;white-space:nowrap}
+main{max-width:1200px;margin:auto;padding:8px 12px 40px}section{margin-top:22px}
+h2{font-size:17px;margin:0 0 8px;border-bottom:1px solid var(--line);padding-bottom:6px}h3{font-size:15px;margin:0 0 8px}h4{font-size:13px;margin:12px 0 6px;color:var(--mut)}
+.note{color:var(--mut);font-size:12.5px;margin:6px 0 10px}.warn{background:#2d2208;border:1px solid #6b4f12;border-radius:8px;padding:8px 10px;font-size:13px}
+.tw{overflow-x:auto;-webkit-overflow-scrolling:touch;border:1px solid var(--line);border-radius:8px;background:var(--card)}
+table{border-collapse:collapse;width:100%;font-size:13px}th,td{padding:6px 8px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{position:sticky;top:0;background:#1c2128;color:var(--mut);font-weight:600;font-size:11.5px;white-space:nowrap}tr:last-child td{border-bottom:0}
+td:first-child,th:first-child{position:sticky;left:0;background:var(--card);z-index:1}th:first-child{background:#1c2128;z-index:2}
+.ev td:nth-child(2){min-width:220px}.ev td:nth-child(3){min-width:150px}.ev td:nth-child(5){min-width:180px}
+.small{font-size:11.5px;color:var(--mut)}.nowrap{white-space:nowrap}.num{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}.id{font-weight:700;color:var(--acc);white-space:nowrap}
+.pos{color:var(--pos)}.neg{color:var(--neg)}.na{color:var(--mut)}
+.b{display:inline-block;font-size:10.5px;font-weight:600;padding:1px 7px;border-radius:99px;border:1px solid var(--line);white-space:nowrap;margin:1px 2px 1px 0}
+.hit{background:#12361d;color:var(--pos);border-color:#238636}.miss{background:#3b1418;color:var(--neg);border-color:#8e2a30}
+.draft{background:#3a2a05;color:#f0c050;border-color:#9e6a03}.drow td{background:#1d1a10}.drow td:first-child{background:#1d1a10}
+.st-happened{background:#12361d;color:var(--pos)}.st-partial{background:#2d2a10;color:#e3c25a}.st-progressing{background:#0f2a45;color:var(--acc)}.st-notyet{background:#262c36;color:#c9d1d9}.st-na{color:var(--mut)}
+.s-follow{color:var(--pos)}.s-watch{color:var(--acc)}.s-park{color:var(--mut)}.s-dropped{color:var(--neg);opacity:.8}
+.t-strong{color:var(--pos);font-weight:700}.t-moderate{color:var(--acc)}.t-weak,.t-not{color:var(--mut)}
+.tent{font-size:10px;color:var(--warn);border:1px dashed var(--warn);border-radius:4px;padding:0 4px;white-space:nowrap}
+details.evd{margin:8px 0;border:1px solid var(--line);border-radius:8px;background:var(--card)}details.evd>summary{padding:8px 10px;cursor:pointer;font-weight:600}
+details.evd .tw{border:0;border-top:1px solid var(--line);border-radius:0 0 8px 8px}details>summary{cursor:pointer;color:var(--fg);margin:8px 0}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:12px}.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:10px}
+.card .tw{background:transparent}
+.filters{display:flex;gap:8px;flex-wrap:wrap;align-items:center;margin-bottom:8px}
+input,select{background:var(--card);color:var(--fg);border:1px solid var(--line);border-radius:8px;padding:7px 9px;font-size:14px}input{flex:1;min-width:180px}
+.post{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:9px 11px;margin-bottom:8px}
+.ph{display:flex;flex-wrap:wrap;gap:6px;align-items:center}.ptx summary{margin:4px 0}.ptext{margin:6px 0;white-space:pre-wrap;word-break:break-word}.ptext.na{font-style:italic;font-size:12.5px}
+.pnote{font-size:12.5px;margin:4px 0;padding:4px 8px;border-left:2px solid var(--line);white-space:pre-wrap;word-break:break-word}
+.plink a{color:var(--acc);word-break:break-all}.evb{color:var(--acc)}.kb{color:var(--mut)}
+.ideas{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px}blockquote{margin:8px 0;padding:6px 10px;border-left:3px solid var(--acc);color:#c9d1d9;font-size:13px}
+footer{margin-top:30px;color:var(--mut);font-size:11.5px;border-top:1px solid var(--line);padding-top:10px}
+@media (max-width:760px){header{position:static}html{scroll-padding-top:8px}.two{grid-template-columns:1fr}h1{font-size:18px}.kpi{min-width:0;padding:5px 8px}.kv{font-size:16px}body{font-size:13.5px}table{font-size:12.5px}th,td{padding:5px 6px}}
+</style></head><body><div id="core"><p class="note" style="padding:16px">Loading…</p></div><main><section id="feed"><h2>5 · Posts feed</h2><div id="fhead"></div><div class="filters"><input id="q" type="search" placeholder="Search posts, handles, events…"><select id="hf"><option value="">All handles</option></select><span id="cnt" class="small"></span></div><div id="posts"></div></section><div id="tail"></div></main><script>
+(function(){
+var V=function(u,h){return u+'?v='+(h||Date.now())};
+function get(u){return fetch(u,{cache:'no-store'}).then(function(r){if(!r.ok)throw new Error(u+' '+r.status);return r.text()})}
+get('manifest.json?t='+Date.now()).then(function(t){var m=JSON.parse(t);
+ return Promise.all([get(V('core.html',m.files['core.html'])),get(V('tail.html',m.files['tail.html'])),get(V('feed/head.html',m.files['feed/head.html']))]
+  .concat(m.feed.map(function(f){return get(V(f,m.files[f]))}))).then(function(r){
+  document.getElementById('core').innerHTML=r[0];document.getElementById('tail').innerHTML=r[1];document.getElementById('fhead').innerHTML=r[2];
+  var P=document.getElementById('posts');P.innerHTML=r.slice(3).join('\n');
+  [].slice.call(P.children).sort(function(a,b){return (+b.dataset.t)-(+a.dataset.t)}).forEach(function(n){P.appendChild(n)});
+  var u=document.getElementById('upd');if(u)u.textContent=m.updated_et;var k=document.getElementById('kpi-posts');if(k)k.textContent=m.n_user_links;
+  var hs={};[].forEach.call(document.querySelectorAll('.post'),function(p){var b=p.querySelector('b');hs[p.dataset.h]=b?b.textContent:p.dataset.h});
+  var sel=document.getElementById('hf');Object.keys(hs).sort().forEach(function(h){var o=document.createElement('option');o.value=h;o.textContent=hs[h];sel.appendChild(o)});
+  filt();if(location.hash){var el=document.querySelector(location.hash);if(el)el.scrollIntoView()}
+ })}).catch(function(e){document.getElementById('core').innerHTML='<p class="warn">Could not load dashboard data: '+e.message+'. Try reloading.</p>'});
+var q=document.getElementById('q'),hf=document.getElementById('hf'),c=document.getElementById('cnt');
+function filt(){var s=(q.value||'').toLowerCase(),h=hf.value,n=0;[].forEach.call(document.querySelectorAll('.post'),function(p){var ok=(!h||p.dataset.h===h)&&(!s||p.textContent.toLowerCase().indexOf(s)>=0);p.style.display=ok?'':'none';if(ok)n++});c.textContent=n+' shown'}
+q.addEventListener('input',filt);hf.addEventListener('change',filt);
+})();
+</script></body></html>
