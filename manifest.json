@@ -1,21 +1,21 @@
 {
-"updated_et": "Fri Oct 2, 2026, 11:04 PM ET",
+"updated_et": "Sat Oct 3, 2026, 7:25 AM ET",
 "n_user_links": 160,
 "layout": "single-page",
-"page_hash": "cf1c44e34a3ccc51",
+"page_hash": "e22e005c19a35345",
 "files": {
-"index.html": "4f95b9e63b211205",
+"index.html": "cf7a4756f47225b0",
 ".nojekyll": "e3b0c44298fc1c14",
 "api/README.md": "46420bd841342ee7",
-"api/candidates.csv": "9adf3cda82b59027",
-"api/candidates.json": "9ab56f22e76041bb",
+"api/candidates.csv": "785376090532f09e",
+"api/candidates.json": "4524ae19e5ef106e",
 "api/catalysts.csv": "49c0b6baa02525dd",
 "api/catalysts.json": "3a117b0b0be18aba",
-"api/handles.csv": "da99817c8a7d28cc",
-"api/handles.json": "54060094cb54fe51",
-"api/posts.csv": "ff418c0c6cc7d593",
-"api/posts.json": "b73ba588fdbd3925",
-"api/reactions.csv": "79ab58f6a7dbfcb6",
-"api/reactions_telegram.csv": "18490d9922cc1237"
+"api/handles.csv": "07b1e5e532b009ed",
+"api/handles.json": "82161d0d266481a0",
+"api/posts.csv": "02add6dac82e9ba3",
+"api/posts.json": "8d00194dd6ebdf71",
+"api/reactions.csv": "6005d0915b185df3",
+"api/reactions_telegram.csv": "5dd51d544fd358af"
 }
 }
