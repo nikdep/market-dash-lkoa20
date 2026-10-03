@@ -61,6 +61,7 @@ nothing is estimated or filled in. Prices come from Yahoo's chart endpoint (unof
 | event, event_id | what happens; tracked event id |
 | direction | how the ticker is expected to move if the story plays out: `gain` / `lose` / `mixed` / null |
 | source | `confirmed date` (company/regulator page), `exposures.csv`, `boom_candidates.csv` |
+| source_url | verified public source URL when available |
 | note | context |
 
 ## handles.json : account records (daily + intraday)
