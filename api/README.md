@@ -23,6 +23,8 @@ nothing is estimated or filled in. Prices come from Yahoo's chart endpoint (unof
 | rank, status, filter_reason | v4 combined ranking: `confirmed` (ranked by combined.up_risk_ratio) then `waiting` (by combined score) then `filtered` (watchlist, with reason) |
 | combined.* | combined_score, confirmed_date/how (5%+ day on 1.5x volume or close above 20-day high), stop/stop_how/risk_pct (story-wrong stop: tighter of 1% below pre-call low and 2x ATR14), upside_est_pct/src (half 52-wk high + half analyst mean, capped), up_risk_ratio, analysts_used, days_since_call |
 | rank_upside | rank under the v3 upside-first score |
+| rank, sort_score, cap_tier, size_w, strip, low_float | v5 (small caps first): confirmed by up_risk_ratio x size_w, waiting by combined score x size_w (size_w: < $2B 2.0, $2-10B 1.4, $10-200B 0.85, > $200B 0.6 and strip = `large caps`); under $2M/day traded -> filtered; low_float = float under $250M or under 50% of shares |
+| rank_combined_v4 | rank under the v4 combined ranking (before the small-cap weighting) |
 | boom_score | v4 combined score |
 | upside_score | v3 upside score: 0.45 payoff vs size + 0.25 room to run + 0.10 dated catalyst + 0.20 trend, x0.6 late call, x0.75 price broken, x0.97-1.03 source grade |
 | upside.bull_pct, upside.bull_src | bull-case % move and its basis (analyst high target, or back to the 52-week high) |
