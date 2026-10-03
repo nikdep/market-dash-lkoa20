@@ -20,7 +20,15 @@ nothing is estimated or filled in. Prices come from Yahoo's chart endpoint (unof
 | jev_impact | -1..+1 Jev score (direction x directness x size x not priced in) |
 | jev_priced_in | 0..1 Jev read of how much the market already expects |
 | jev_order, jev_horizon | first/second order link; days/weeks/months/years |
-| boom_score | ranking score (impact, small-cap and first-order boost, already-ran penalty) |
+| boom_score | ranking score (new, echo-aware) = boom_score_old x echo_mult |
+| boom_score_old, rank_old | previous score/rank (impact, small-cap and first-order boost, already-ran penalty), kept for comparison |
+| echo_mult | independence x earliness x crowding x outside-confirmation multiplier |
+| rank_tags | short human-readable reasons (independent sources / early / crowded / outside confirmation) |
+| n_independent, n_accounts, n_copycats, n_story_posts, n_quote_or_reply_posts | each account once per story; quotes/replies 0.3, copycats (first post within 24h of another account) 0.5 |
+| prior_run_1m_excess_pct | excess vs SPY over the 21 trading days before the base post (>= 20% = late, penalised) |
+| crowded | true if a burst of posts on the ticker/theme in the last 7 days (>= 3x prior 4-week rate) |
+| outside_confirmation | `tg` AzazelNews mention, `qq_buy` QuiverQuant insider/politician purchase (30 days before post to now), `polymarket` odds >= 50% for the supportive outcome |
+| polymarket | related Polymarket odds (supportive outcome), informational |
 | ret_since_post_pct, spy_since_post_pct, excess_since_post_pct | daily closes, first close after the post to latest close |
 | base_post_et, base_handle | the post the baseline is measured from |
 | market_cap_usd_b, avg_dollar_vol_m | size and liquidity |
