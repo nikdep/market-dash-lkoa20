@@ -1,0 +1,50 @@
+{
+"updated_et": "Fri Oct 2, 2026, 8:36 PM ET",
+"n_user_links": 136,
+"core": [
+"core/00-top.html",
+"core/01-boom.html",
+"core/02-events.html",
+"core/03-wl.html",
+"core/04-score.html",
+"core/05-sources.html",
+"core/06-narratives.html",
+"core/07-scenarios.html",
+"core/08-handles.html"
+],
+"feed": [
+"feed/c1-00.json",
+"feed/c1-01.json",
+"feed/c1-02.json",
+"feed/c1-03.json",
+"feed/c1-04.json",
+"feed/c2-00.json",
+"feed/c3-00.json",
+"feed/c5-00.json",
+"feed/c6-00.json"
+],
+"files": {
+"tail.html": "442d7ce5c66f9bda",
+"feed/head.html": "d31df966ecce4b72",
+"core/00-top.html": "f815ea914cf0f654",
+"core/01-boom.html": "23e31d7c72a6511e",
+"core/02-events.html": "98336896f26e906e",
+"core/03-wl.html": "e314db982a765776",
+"core/04-score.html": "4932460beda6ec23",
+"core/05-sources.html": "ffa934c4e84d65cf",
+"core/06-narratives.html": "ddaa35ccee2d0100",
+"core/07-scenarios.html": "1bdd0c18f5caa9c2",
+"core/08-handles.html": "1d7bf616899591c1",
+"feed/c1-00.json": "5f64b40c57251e8e",
+"feed/c1-01.json": "cc4f619716bc7131",
+"feed/c1-02.json": "fa0964ec8b2549f8",
+"feed/c1-03.json": "1e23a48acf1316a4",
+"feed/c1-04.json": "9b7424ee40d5da05",
+"feed/c2-00.json": "2f25b47a3626f319",
+"feed/c3-00.json": "4fe6d17e239a0b7f",
+"feed/c5-00.json": "c09a8fac2d5d3dd5",
+"feed/c6-00.json": "17e2adc4696590ec",
+"index.html": "645f0cea8b374540",
+".nojekyll": "e3b0c44298fc1c14"
+}
+}

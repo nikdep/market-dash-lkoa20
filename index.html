@@ -39,20 +39,20 @@ input,select{background:var(--card);color:var(--fg);border:1px solid var(--line)
 .ideas{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px}blockquote{margin:8px 0;padding:6px 10px;border-left:3px solid var(--acc);color:#c9d1d9;font-size:13px}
 footer{margin-top:30px;color:var(--mut);font-size:11.5px;border-top:1px solid var(--line);padding-top:10px}
 @media (max-width:760px){header{position:static}html{scroll-padding-top:8px}.two{grid-template-columns:1fr}h1{font-size:18px}.kpi{min-width:0;padding:5px 8px}.kv{font-size:16px}body{font-size:13.5px}table{font-size:12.5px}th,td{padding:5px 6px}}
-</style></head><body><div id="core"><p class="note" style="padding:16px">Loading…</p></div><main><section id="feed"><h2>5 · Posts feed</h2><div id="fhead"></div><div class="filters"><input id="q" type="search" placeholder="Search posts, handles, events…"><select id="hf"><option value="">All handles</option></select><span id="cnt" class="small"></span></div><div id="posts"></div></section><div id="tail"></div></main><script>
+</style></head><body><div id="core"><p class="note" style="padding:16px">Loading…</p></div><main><section id="feed"><h2>5 · Posts feed</h2><div id="fhead"></div><div class="filters"><input id="q" type="search" placeholder="Search posts, handles, events…"><select id="hf"><option value="">All handles</option></select><label class="small"><input id="tf" type="checkbox"> testable only (Jev)</label><span id="cnt" class="small"></span></div><div id="posts"></div></section><div id="tail"></div></main><script>
 (function(){
 var V=function(u,h){return u+'?v='+(h||Date.now())};
 function E(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
-function card(p){var k=p.k||'post';return '<article class="post" data-h="'+E((p.h||'').toLowerCase())+'" data-k="'+E(k)+'" data-t="'+(p.t||0)+'"><div class="ph"><b>'+E(k==='link'?p.h:'@'+p.h)+'</b><span class="small">'+E(p.d||'')+'</span><span class="b evb">'+E(p.e||'n/a')+'</span><span class="b kb">'+E(k)+'</span><span class="small">'+(p.c?'convo '+E(p.c):'')+'</span></div>'
+function card(p){var k=p.k||'post';return '<article class="post" data-h="'+E((p.h||'').toLowerCase())+'" data-j="'+E(p.j||'')+'" data-k="'+E(k)+'" data-t="'+(p.t||0)+'"><div class="ph"><b>'+E(k==='link'?p.h:'@'+p.h)+'</b><span class="small">'+E(p.d||'')+'</span><span class="b evb">'+E(p.e||'n/a')+'</span><span class="b kb">'+E(k)+'</span><span class="small">'+(p.c?'convo '+E(p.c):'')+'</span></div>'
  +(p.x?'<div class="ptext">'+E(p.x)+'</div>':'<div class="ptext na">Post text not captured yet.</div>')+(p.m?'<div class="small">'+E(p.m)+'</div>':'')
  +(p.n?'<div class="pnote"><span class="small">Your note when you sent it:</span> '+E(p.n)+'</div>':'')
  +'<div class="small plink">'+(p.u?'<a href="'+E(p.u)+'" target="_blank" rel="noopener noreferrer">'+E(p.u.split('://').pop())+'</a>':'<span class="na">no link captured</span>')+'</div></article>'}
 function get(u){return fetch(u,{cache:'no-store'}).then(function(r){if(!r.ok)throw new Error(u+' '+r.status);return r.text()})}
 get('manifest.json?t='+Date.now()).then(function(t){var m=JSON.parse(t);
- return Promise.all([get(V('core.html',m.files['core.html'])),get(V('tail.html',m.files['tail.html'])),get(V('feed/head.html',m.files['feed/head.html']))]
-  .concat(m.feed.map(function(f){return get(V(f,m.files[f]))}))).then(function(r){
-  document.getElementById('core').innerHTML=r[0];document.getElementById('tail').innerHTML=r[1];document.getElementById('fhead').innerHTML=r[2];
-  var all=[];r.slice(3).forEach(function(t){all=all.concat(JSON.parse(t))});
+ var cs=m.core||['core.html'],nc=cs.length;
+ return Promise.all(cs.concat(['tail.html','feed/head.html'],m.feed).map(function(f){return get(V(f,m.files[f]))})).then(function(r){
+  document.getElementById('core').innerHTML=r.slice(0,nc).join('\n');document.getElementById('tail').innerHTML=r[nc];document.getElementById('fhead').innerHTML=r[nc+1];
+  var all=[];r.slice(nc+2).forEach(function(t){all=all.concat(JSON.parse(t))});
   var P=document.getElementById('posts');P.innerHTML=all.map(card).join('\n');
   [].slice.call(P.children).sort(function(a,b){return (+b.dataset.t)-(+a.dataset.t)}).forEach(function(n){P.appendChild(n)});
   var u=document.getElementById('upd');if(u)u.textContent=m.updated_et;var k=document.getElementById('kpi-posts');if(k)k.textContent=m.n_user_links;
@@ -60,8 +60,8 @@ get('manifest.json?t='+Date.now()).then(function(t){var m=JSON.parse(t);
   var sel=document.getElementById('hf');Object.keys(hs).sort().forEach(function(h){var o=document.createElement('option');o.value=h;o.textContent=hs[h];sel.appendChild(o)});
   filt();if(location.hash){var el=document.querySelector(location.hash);if(el)el.scrollIntoView()}
  })}).catch(function(e){document.getElementById('core').innerHTML='<p class="warn">Could not load dashboard data: '+e.message+'. Try reloading.</p>'});
-var q=document.getElementById('q'),hf=document.getElementById('hf'),c=document.getElementById('cnt');
-function filt(){var s=(q.value||'').toLowerCase(),h=hf.value,n=0;[].forEach.call(document.querySelectorAll('.post'),function(p){var ok=(!h||p.dataset.h===h)&&(!s||p.textContent.toLowerCase().indexOf(s)>=0);p.style.display=ok?'':'none';if(ok)n++});c.textContent=n+' shown'}
-q.addEventListener('input',filt);hf.addEventListener('change',filt);
+var q=document.getElementById('q'),hf=document.getElementById('hf'),c=document.getElementById('cnt'),tf=document.getElementById('tf');
+function filt(){var s=(q.value||'').toLowerCase(),h=hf.value,n=0,t=tf&&tf.checked;[].forEach.call(document.querySelectorAll('.post'),function(p){var ok=(!h||p.dataset.h===h)&&(!t||p.dataset.j==='yes')&&(!s||p.textContent.toLowerCase().indexOf(s)>=0);p.style.display=ok?'':'none';if(ok)n++});c.textContent=n+' shown'}
+q.addEventListener('input',filt);hf.addEventListener('change',filt);if(tf)tf.addEventListener('change',filt);
 })();
 </script></body></html>
