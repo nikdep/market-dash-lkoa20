@@ -1,14 +1,14 @@
 {
-"updated_et": "Fri Oct 2, 2026, 10:12 PM ET",
+"updated_et": "Fri Oct 2, 2026, 10:16 PM ET",
 "n_user_links": 136,
 "layout": "single-page",
-"page_hash": "d2d653ebe56a34b6",
+"page_hash": "fd649e56ce79fa12",
 "files": {
-"index.html": "250d2e9c532d9495",
+"index.html": "9f8ca466da7e50d5",
 ".nojekyll": "e3b0c44298fc1c14",
 "api/README.md": "dbfceae40b1d6e76",
 "api/candidates.csv": "a62eafac13cd585d",
-"api/candidates.json": "50bde8b5a2773d33",
+"api/candidates.json": "7b41476417efaf8b",
 "api/catalysts.csv": "da7d69fcc6c243be",
 "api/catalysts.json": "36cd856bab3aa754",
 "api/handles.csv": "fc211a89facee3ac",
