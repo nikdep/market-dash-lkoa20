@@ -20,7 +20,15 @@ nothing is estimated or filled in. Prices come from Yahoo's chart endpoint (unof
 | jev_impact | -1..+1 Jev score (direction x directness x size x not priced in) |
 | jev_priced_in | 0..1 Jev read of how much the market already expects |
 | jev_order, jev_horizon | first/second order link; days/weeks/months/years |
-| boom_score | ranking score (new, echo-aware) = boom_score_old x echo_mult |
+| boom_score, upside_score | current ranking score (upside first): 0.45 payoff vs size + 0.25 room to run + 0.10 dated catalyst + 0.20 trend, x0.6 late call, x0.75 price broken, x0.97-1.03 source grade |
+| upside.bull_pct, upside.bull_src | bull-case % move and its basis (analyst high target, or back to the 52-week high) |
+| upside.base_pct, upside.below_52w_high_pct, upside.to_target_pct, upside.n_analysts, upside.short_pct_float, upside.days_to_cover | Yahoo (yfinance) analyst/52-week/short data |
+| upside.catalyst_date, upside.catalyst_label, upside.days_to_catalyst | nearest dated catalyst (company earnings date from Yahoo or a confirmed story date) |
+| upside.above_ma20, upside.rs10_pct, upside.late_call, upside.price_broken | trend and penalty flags |
+| upside.up_payoff, up_room, up_catalyst, up_trend, size_factor | score parts (0..1) |
+| upside.why_pop, upside.what_happen, upside.up_tags | plain-English lines and warning tags |
+| source_grade, first_caller | source quality A-D (tiebreaker only) and the first account to call it |
+| echo_score, rank_echo | echo-aware score/rank (Oct 2 v2) = boom_score_old x echo_mult |
 | boom_score_old, rank_old | previous score/rank (impact, small-cap and first-order boost, already-ran penalty), kept for comparison |
 | echo_mult | independence x earliness x crowding x outside-confirmation multiplier |
 | rank_tags | short human-readable reasons (independent sources / early / crowded / outside confirmation) |
@@ -65,7 +73,7 @@ nothing is estimated or filled in. Prices come from Yahoo's chart endpoint (unof
 ## posts.json : latest posts, newest first
 | field | meaning |
 |---|---|
-| source | `x` (posts you sent), `x-followed` (a followed account's timeline, e.g. @QuiverQuant), `x-alert` (new post found by the watcher), `telegram` (AzazelNews stock picks, last 30 days) |
+| source | `x` (posts you sent), `x-followed` (a followed account's timeline, e.g. @QuiverQuant), `x-liked` (a market post Rocketman liked on X), `x-alert` (new post found by the watcher), `telegram` (AzazelNews stock picks, last 30 days) |
 | handle, post_id, url | |
 | posted_at_et, posted_epoch | post time (X: decoded from the post ID, to the second) |
 | sent_at_et | when you sent it into the Grok chat |
