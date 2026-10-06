@@ -77,6 +77,21 @@ nothing is estimated or filled in. Prices come from Yahoo's chart endpoint (unof
 | intraday.<h>.n / mean_excess_pct / median_excess_pct / hit_rate_pct | h in `5m`, `15m`, `1h`, `1d`, `close`; excess = ticker minus SPY over the same minutes; hit = excess > 0 |
 | intraday_rows, intraday_intervals | post x ticker pairs and bar sizes used (`1m:23 5m:3`) |
 
+## rank_history.json : what was ranked where, per day (History tab)
+One entry per ET day, newest first (`id` = date; `YYYY-MM-DD_before` = last list before a same-day rules change).
+The list is the ranking after the last pipeline run of that day (code/rank_history.py --snapshot, data/rank_history/);
+days before Oct 5, 2026 were rebuilt from this site's git history (`source` = `git gh-pages <sha>`).
+| field | meaning |
+|---|---|
+| date, id, label, saved_at_et, source | day (ET), entry id, display label, when the list was saved, where it came from |
+| method, method_family, method_label | ranking rules that day: `v1` source quality (old), `v2` echo-aware, `v3` upside-first, `v4` combined upside/risk, `v5` combined + small caps first |
+| top, entered_top_since, dropped_from_top_since | that day's top-10 tickers; names in today's top 10 that weren't then; names since dropped out |
+| rows[].rank, ticker, group, status | rank that day; group `main` / `large caps` / `watchlist` |
+| rows[].price, currency, price_usd, price_cad, price_date | that day's latest close (native) and USD / CAD equivalents |
+| rows[].price_now, price_now_usd, price_now_date, chg_since_pct | latest close and % change since (native currency) |
+| rows[].rank_now, group_now, in_top_now, new_in_top | where it ranks today (`gone` = no longer a candidate); entered the top 10 that day |
+CSV twin `rank_history.csv`: one row per day x rank.
+
 ## posts.json : latest posts, newest first
 | field | meaning |
 |---|---|
