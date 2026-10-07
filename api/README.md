@@ -117,5 +117,21 @@ CSV twin `rank_history.csv`: one row per day x rank.
 `vol_spike` = volume in the first 15 min (5m bars) or 60 min (60m bars) after base / average of the same time-of-day window over up to 20 prior sessions (`vol_baseline_days`).
 `data_note` explains blanks. Use it for event studies: no look-ahead, every return starts after the post.
 
+
+## crypto.json : holdings + watchlist (Crypto tab)
+Rocketman crypto book (equities stay in candidates/handles). Source: `maps/crypto_holdings.csv` — do not invent rows.
+| field | meaning |
+|---|---|
+| symbol, name | display ticker and name (e.g. ONDO / Ondo Finance) |
+| kind | `holding` (held) or `watch` (watchlist only) |
+| platform | where it sits (e.g. Crypto.com); platforms note also at file level |
+| status, note | brief status and free-text note |
+| yahoo | Yahoo chart symbol (e.g. `ONDO-USD`) |
+| price_usd, price_cad | latest Yahoo USD price; CAD when FX is available |
+| prev_close_usd, chg_1d_pct | prior close and 1-day % change |
+| currency, as_of_et | quote currency; quote time (America/Toronto) |
+| fx_usdcad, fx_asof | CAD per USD used for the CAD column |
+| price_error | set only when the live fetch failed and a cached quote was kept |
+
 Limits: tiny samples (tens of posts per account at most), daily candidates are multi-week ideas, no pre/post-market bars,
 and SPY excess is blank when SPY isn't trading at the base time (Asian listings, crypto).
