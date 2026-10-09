@@ -1,5 +1,4 @@
 ticker,date,date_precision,window_start,window_end,event,event_id,direction,source,source_url,note
-ARX.TO,2026-09-29,past,,,LNG Canada Phase 2 FID done Sep 29,E06,gain,boom_candidates.csv,,Canadian LNG growth
 PEY.TO,2026-09-29,past,,,LNG Canada Phase 2 FID done Sep 29,E06,gain,boom_candidates.csv,,Canadian LNG growth
 TOU.TO,2026-09-29,past,,,LNG Canada Phase 2 FID done Sep 29,E06,gain,boom_candidates.csv,,Canadian LNG growth
 TRP,2026-09-29,past,,,LNG Canada Phase 2 FID done Sep 29,E06,gain,boom_candidates.csv,,Canadian LNG growth
@@ -100,8 +99,6 @@ SCCO,,window,,2026-12-31,Sec. 232 copper-cable tariff decision (Polymarket 30% b
 SPCX,,window,,2026-12-31,by Dec 31 2026,P05,gain,boom_candidates.csv,,SpaceX/xAI compute
 TECK,,window,,2026-12-31,Sec. 232 copper-cable tariff decision (Polymarket 30% by Dec 31),P08,gain,boom_candidates.csv,,Copper supercycle
 ACN,,unknown,,,Indian IT results read-through (own date not confirmed),E08,mixed,exposures.csv,,status DRAFT_ADD
-ARX.TO,,unknown,,,Ksi Lisims FID TBD,E06,gain,boom_candidates.csv,,Canadian LNG growth
-ARX.TO,,unknown,,,Q3 reports Nov,E06,gain,boom_candidates.csv,,Canadian LNG growth
 ASST,,rolling,,,rolling,P09,gain,boom_candidates.csv,,Crypto cycle & treasury proxies
 ASST,,unknown,,,Polymarket: BTC >$100k in Oct 9.5%,P09,gain,boom_candidates.csv,,Crypto cycle & treasury proxies
 CNQ.TO,,rolling,,,rolling,P07,gain,boom_candidates.csv,,Canadian oil sands + BC oil pipeline
