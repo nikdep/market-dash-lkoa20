@@ -1397,7 +1397,7 @@ telegram,AzazelNews (Telegram),1016074,2026-07-12 18:50:11,SPCX,SPCX,60m,no,2026
 telegram,AzazelNews (Telegram),1016778,2026-07-14 15:05:00,GFUZ,GFUZ,60m,yes,2026-07-14 15:30,13.435,,,,,2.642,2.681,-17.306,-17.647,2.642,2.681,13.7900,11.1100,13.7900,,,no 5m/15m (finer than bar); no volume baseline
 telegram,AzazelNews (Telegram),1016799,2026-07-14 15:21:52,RKLB,RKLB,60m,yes,2026-07-14 15:30,78.85,,,,,-0.051,-0.012,-3.348,-3.690,-0.051,-0.012,78.8100,76.2100,78.8100,,,no 5m/15m (finer than bar); no volume baseline
 telegram,AzazelNews (Telegram),1016819,2026-07-14 15:54:10,SPCX,SPCX,60m,yes,2026-07-15 09:30,137.305,,,,,-0.076,-0.127,-4.570,-4.109,-1.460,-1.525,137.2000,131.0300,135.3001,0.29,20,no 5m/15m (finer than bar)
-telegram,AzazelNews (Telegram),1016836,2026-07-14 16:03:21,GWH,GWH,60m,no,2026-07-15 09:30,0.948,,,,,0.105,0.055,-5.992,-5.530,7.067,7.003,0.9490,0.8912,1.0150,1.59,20,no 5m/15m (finer than bar)
+telegram,AzazelNews (Telegram),1016836,2026-07-14 16:03:21,GWH,GWH,60m,no,2026-07-17 09:30,0.909,,,,,-1.001,-1.575,-7.767,-7.775,-2.695,-2.840,0.8999,0.8384,0.8845,,,no 5m/15m (finer than bar); no volume baseline
 telegram,AzazelNews (Telegram),1016841,2026-07-14 16:04:51,PLUG,PLUG,60m,no,2026-07-15 09:30,2.282,,,,,-3.155,-3.205,-5.346,-4.885,-2.936,-3.001,2.2100,2.1600,2.2150,0.54,20,no 5m/15m (finer than bar)
 telegram,AzazelNews (Telegram),1016843,2026-07-14 16:05:11,SARO,SARO,60m,no,2026-07-15 09:30,27.41,,,,,-0.839,-0.889,-2.882,-2.421,0.511,0.446,27.1800,26.6200,27.5500,0.69,20,no 5m/15m (finer than bar)
 telegram,AzazelNews (Telegram),1016869,2026-07-14 16:35:32,AVAV,AVAV,60m,no,2026-07-15 09:30,144.15,,,,,-0.645,-0.696,3.573,4.034,-2.130,-2.195,143.2199,149.3000,141.0800,0.38,20,no 5m/15m (finer than bar)
