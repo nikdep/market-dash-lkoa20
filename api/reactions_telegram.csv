@@ -706,7 +706,7 @@ telegram,AzazelNews (Telegram),931487,2025-11-18 13:50:53,NVDA,NVDA,60m,yes,2025
 telegram,AzazelNews (Telegram),931487,2025-11-18 13:50:53,PLTR,PLTR,60m,yes,2025-11-18 14:30,168.477,,,,,0.055,0.132,-1.815,-1.772,-0.681,-0.260,168.5700,165.4200,167.3300,0.84,20,no 5m/15m (finer than bar)
 telegram,AzazelNews (Telegram),931494,2025-11-18 13:52:50,NVDA,NVDA,60m,yes,2025-11-18 14:30,183.4699,,,,,-0.305,-0.228,1.804,1.846,-1.145,-0.724,182.9099,186.7801,181.3701,0.84,20,no 5m/15m (finer than bar)
 telegram,AzazelNews (Telegram),931502,2025-11-18 14:12:24,PSKY,PSKY,60m,yes,2025-11-18 14:30,15.91,,,,,1.728,1.805,-2.766,-2.723,1.226,1.647,16.1850,15.4700,16.1050,1.2,20,no 5m/15m (finer than bar)
-telegram,AzazelNews (Telegram),931502,2025-11-18 14:12:24,WBD,WBD,60m,yes,2025-11-18 14:30,23.295,,,,,0.859,0.935,-0.923,-0.881,1.739,2.159,23.4950,23.0800,23.7000,0.81,20,no 5m/15m (finer than bar)
+telegram,AzazelNews (Telegram),931502,2025-11-18 14:12:24,WBD,WBD,,,,,,,,,,,,,,,,,,,,no bar after post in served window
 telegram,AzazelNews (Telegram),932529,2025-11-21 18:46:52,TSLA,TSLA,60m,no,2025-11-24 09:30,402.16,,,,,3.116,2.685,4.264,2.407,3.837,2.913,414.6901,419.3101,417.5901,1.09,20,no 5m/15m (finer than bar)
 telegram,AzazelNews (Telegram),933193,2025-11-23 11:11:59,GOOGL,GOOGL,60m,no,2025-11-24 09:30,310.94,,,,,1.914,1.483,4.004,2.146,2.393,1.469,316.8901,323.3900,318.3799,1.88,20,no 5m/15m (finer than bar)
 telegram,AzazelNews (Telegram),933193,2025-11-23 11:11:59,MSFT,MSFT,60m,no,2025-11-24 09:30,475.0,,,,,-0.543,-0.974,0.406,-1.451,-0.255,-1.178,472.4198,476.9299,473.7902,1.14,20,no 5m/15m (finer than bar)
