@@ -1,2 +1,2 @@
 symbol,name,kind,platform,status,note,yahoo,price_usd,price_cad,prev_close_usd,chg_1d_pct,currency,as_of_et,fx_usdcad,fx_asof,price_error
-ONDO,Ondo Finance,holding,Crypto.com,held,Held on Crypto.com (research watch only),ONDO-USD,0.43766,0.614168,0.434262,0.78,USD,2026-10-22T07:22:40-04:00,1.4033000469207764,2026-10-22,
+ONDO,Ondo Finance,holding,Crypto.com,held,Held on Crypto.com (research watch only),ONDO-USD,0.42994,0.60269,0.434262,-1.0,USD,2026-10-22T12:25:39-04:00,1.4018000364303589,2026-10-22,
