@@ -96,7 +96,7 @@ CSV twin `rank_history.csv`: one row per day x rank.
 ## posts.json : latest posts, newest first
 | field | meaning |
 |---|---|
-| source | `x` (posts you sent), `x-followed` (a followed account's timeline, e.g. @QuiverQuant), `x-liked` (a market post Rocketman liked on X), `x-alert` (new post found by the watcher), `telegram` (AzazelNews stock picks, last 30 days) |
+| source | `x` (posts you sent), `x-liked` (a market post Rocketman liked on X), `x-alert` (new post found by the watcher), `telegram` (AzazelNews stock picks, last 30 days). Followed timelines (e.g. @QuiverQuant) are scored on Accounts / scoreboard CSVs, not listed here. |
 | handle, post_id, url | |
 | posted_at_et, posted_epoch | post time (X: decoded from the post ID, to the second) |
 | sent_at_et | when you sent it into the Grok chat |
