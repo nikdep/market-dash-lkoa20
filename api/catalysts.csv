@@ -15,24 +15,18 @@ TCS.NS,2026-10-08,exact,,,TCS Q2 FY27 results (H-1B / onsite-cost commentary),E0
 HCLTECH.NS,2026-10-12,exact,,,HCLTech Q2 FY27 results,E08,lose,confirmed date,,"board meeting Oct 12, expected after Indian market hours"
 300308.SZ,2026-10-13,exact,,,FCC covered-entity component rule takes effect (does it catch optical transceivers?),E01,lose,exposures.csv,,status DRAFT_ADD
 300502.SZ,2026-10-13,exact,,,FCC covered-entity component rule takes effect (does it catch optical transceivers?),E01,lose,exposures.csv,,status DRAFT_ADD
-AAOI,2026-10-13,exact,,,FCC equipment-authorization rule effective,GROK-CATALYST,gain,grok-catalyst,https://www.federalregister.gov/documents/full_text/text/2026/09/11/2026-18535.txt,verified public source
 AAOI,2026-10-13,exact,,,FCC covered-entity component rule takes effect (does it catch optical transceivers?),E01,gain,exposures.csv,,status PARK
-AXTI,2026-10-13,exact,,,FCC equipment-authorization rule effective,GROK-CATALYST,gain,grok-catalyst,https://www.federalregister.gov/documents/full_text/text/2026/09/11/2026-18535.txt,verified public source
 AXTI,2026-10-13,exact,,,FCC covered-entity component rule takes effect (does it catch optical transceivers?),E01,gain,exposures.csv,,status PARK
 CIEN,2026-10-13,exact,,,FCC covered-entity component rule takes effect (does it catch optical transceivers?),E01,gain,exposures.csv,,status DRAFT_ADD
 COHR,2026-10-13,exact,,,FCC covered-entity component rule takes effect (does it catch optical transceivers?),E01,gain,exposures.csv,,status PARK
 CRDO,2026-10-13,exact,,,FCC covered-entity component rule takes effect (does it catch optical transceivers?),E01,gain,boom_candidates.csv,,AI optics bottleneck
 FN,2026-10-13,exact,,,FCC covered-entity component rule takes effect (does it catch optical transceivers?),E01,gain,exposures.csv,,status DRAFT_ADD
-IQE.L,2026-10-13,exact,,,FCC equipment-authorization rule effective,GROK-CATALYST,gain,grok-catalyst,https://www.federalregister.gov/documents/full_text/text/2026/09/11/2026-18535.txt,verified public source
 IQE.L,2026-10-13,exact,,,FCC covered-entity component rule takes effect (does it catch optical transceivers?),E01,gain,boom_candidates.csv,,AI optics bottleneck
 LITE,2026-10-13,exact,,,FCC covered-entity component rule takes effect (does it catch optical transceivers?),E01,gain,exposures.csv,,status PARK
-LWLG,2026-10-13,exact,,,FCC equipment-authorization rule effective,GROK-CATALYST,gain,grok-catalyst,https://www.federalregister.gov/documents/full_text/text/2026/09/11/2026-18535.txt,verified public source
 LWLG,2026-10-13,exact,,,FCC covered-entity component rule takes effect (does it catch optical transceivers?),E01,gain,boom_candidates.csv,,AI optics bottleneck
 MXL,2026-10-13,exact,,,FCC covered-entity component rule takes effect (does it catch optical transceivers?),E01,gain,exposures.csv,,status PARK
-POET,2026-10-13,exact,,,FCC equipment-authorization rule effective,GROK-CATALYST,gain,grok-catalyst,https://www.federalregister.gov/documents/full_text/text/2026/09/11/2026-18535.txt,verified public source
 POET,2026-10-13,exact,,,FCC component rule effective Oct 13 2026,E01,gain,boom_candidates.csv,,FCC optical-transceiver restrictions
 RTX,2026-10-13,exact,,,FCC covered-entity component rule takes effect (does it catch optical transceivers?),E01,,exposures.csv,,status FOLLOW
-SIVE.ST,2026-10-13,exact,,,FCC equipment-authorization rule effective,GROK-CATALYST,gain,grok-catalyst,https://www.federalregister.gov/documents/full_text/text/2026/09/11/2026-18535.txt,verified public source
 SIVE.ST,2026-10-13,exact,,,FCC covered-entity component rule takes effect (does it catch optical transceivers?),E01,gain,exposures.csv,,status PARK
 SMTC,2026-10-13,exact,,,FCC covered-entity component rule takes effect (does it catch optical transceivers?),E01,gain,exposures.csv,,status PARK
 TSEM,2026-10-13,exact,,,FCC covered-entity component rule takes effect (does it catch optical transceivers?),E01,gain,boom_candidates.csv,,AI optics bottleneck
