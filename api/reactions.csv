@@ -744,7 +744,6 @@ x,BubleQe,2120682245510070496,2026-11-11 19:57:02,PPL.TO,PPL.TO,1m,no,2026-11-12
 x,QuiverQuant,2120878544926753018,2026-11-12 08:57:03,NVDA,NVDA,1m,no,2026-11-12 09:30,149.2906,4.667,4.485,7.127,6.666,10.569,10.108,9.062,9.027,11.219,10.792,165.0699,162.8201,166.0400,9.89,20,
 x,QuiverQuant,2120885698941030566,2026-11-12 09:25:29,NVDA,NVDA,1m,no,2026-11-12 09:30,149.2906,4.667,4.485,7.127,6.666,10.569,10.108,9.062,9.027,11.219,10.792,165.0699,162.8201,166.0400,9.89,20,
 x,BubleQe,2120932841714524216,2026-11-12 12:32:49,ABXX.TO,ABXX.TO,1m,yes,2026-11-12 12:33,14.77,0.339,0.320,1.286,1.259,0.339,0.426,-10.156,-9.251,0.271,0.788,14.8200,13.2700,14.8100,1.86,20,
-x,BubleQe,2121247664847384753,2026-11-13 09:23:48,SU.TO,SU.TO,1m,no,2026-11-13 09:30,99.6,0.030,0.143,-0.864,-0.473,-0.452,0.720,,,0.131,0.751,99.1500,,99.7300,0.41,20,no 1d
 x,BubleQe,2121270186519191728,2026-11-13 10:53:18,KEL.TO,KEL.TO,1m,yes,2026-11-13 10:54,11.4,0.132,0.044,0.439,0.384,1.053,1.087,,,0.789,0.244,11.5200,,11.4900,3.44,20,no 1d
 x,BubleQe,2121272373295083895,2026-11-13 11:01:59,ABXX.TO,ABXX.TO,1m,yes,2026-11-13 11:03,13.11,-0.686,-0.753,-2.441,-2.348,-1.602,-1.614,,,1.220,0.638,12.9000,,13.2700,3.32,20,no 1d
 x,BubleQe,2121364483050258573,2026-11-13 17:08:00,SCR.TO,SCR.TO,,,,,,,,,,,,,,,,,,,,no session yet after post
@@ -752,3 +751,43 @@ x,BubleQe,2121515221839741025,2026-11-14 03:06:59,PNE.TO,PNE.TO,,,,,,,,,,,,,,,,,
 x,BubleQe,2121531008571064703,2026-11-14 04:09:43,PNE.TO,PNE.TO,,,,,,,,,,,,,,,,,,,,no session yet after post
 x,BubleQe,2122301554397229452,2026-11-16 07:11:35,AAV.TO,AAV.TO,,,,,,,,,,,,,,,,,,,,no session yet after post
 x,BubleQe,2122301554397229452,2026-11-16 07:11:35,CNQ.TO,CNQ.TO,,,,,,,,,,,,,,,,,,,,no session yet after post
+x,BubleQe,2122304722015265105,2026-11-16 07:24:10,AAV.TO,AAV.TO,,,,,,,,,,,,,,,,,,,,no session yet after post
+x,BubleQe,2122304722015265105,2026-11-16 07:24:10,CNQ.TO,CNQ.TO,,,,,,,,,,,,,,,,,,,,no session yet after post
+x,BubleQe,2122327130067571172,2026-11-16 08:53:13,AAV.TO,AAV.TO,,,,,,,,,,,,,,,,,,,,no session yet after post
+x,BubleQe,2122327130067571172,2026-11-16 08:53:13,CNQ.TO,CNQ.TO,,,,,,,,,,,,,,,,,,,,no session yet after post
+x,BubleQe,2122327130067571172,2026-11-16 08:53:13,TOU.TO,TOU.TO,15m,no,2026-11-16 09:30,65.02,,,0.338,,0.523,,,,,,65.3600,,,,,no 5m/1d/close; SPY not trading at base; no volume baseline
+x,BubleQe,2122327130067571172,2026-11-16 08:53:13,TRP,TRP,1m,no,2026-11-16 09:30,64.52,-0.202,,0.093,,-0.202,,,,,,64.3900,,,0.36,20,no 1d/close; SPY not trading at base
+x,BubleQe,2122329818754953563,2026-11-16 09:03:54,CNQ.TO,CNQ.TO,,,,,,,,,,,,,,,,,,,,no session yet after post
+x,BubleQe,2122331209216958631,2026-11-16 09:09:25,CNQ,CNQ,15m,no,2026-11-16 09:30,49.33,,,-1.318,,-1.946,,,,,,48.3700,,,,,no 5m/1d/close; SPY not trading at base; no volume baseline
+x,BubleQe,2122331209216958631,2026-11-16 09:09:25,CNQ.TO,CNQ.TO,,,,,,,,,,,,,,,,,,,,no session yet after post
+x,BubleQe,2122334584432124292,2026-11-16 09:22:50,AAV.TO,AAV.TO,,,,,,,,,,,,,,,,,,,,no session yet after post
+x,BubleQe,2122334584432124292,2026-11-16 09:22:50,CNQ,CNQ,15m,no,2026-11-16 09:30,49.33,,,-1.318,,-1.946,,,,,,48.3700,,,,,no 5m/1d/close; SPY not trading at base; no volume baseline
+x,BubleQe,2122334584432124292,2026-11-16 09:22:50,TOU.TO,TOU.TO,15m,no,2026-11-16 09:30,65.02,,,0.338,,0.523,,,,,,65.3600,,,,,no 5m/1d/close; SPY not trading at base; no volume baseline
+x,BubleQe,2122340252178325585,2026-11-16 09:45:21,AAV,AAV,,,,,,,,,,,,,,,,,,,,no Yahoo bars for symbol (http 404)
+x,BubleQe,2122340252178325585,2026-11-16 09:45:21,AAV.TO,AAV.TO,,,,,,,,,,,,,,,,,,,,no session yet after post
+x,BubleQe,2122340252178325585,2026-11-16 09:45:21,BIR,BIR,,,,,,,,,,,,,,,,,,,,no Yahoo bars for symbol (http 404)
+x,BubleQe,2122340252178325585,2026-11-16 09:45:21,BIR.TO,BIR.TO,15m,yes,2026-11-16 10:00,7.145,,,0.350,,-0.280,,,,,,7.1250,,,,,no 5m/1d/close; SPY not trading at base; no volume baseline
+x,BubleQe,2122340252178325585,2026-11-16 09:45:21,CNQ.TO,CNQ.TO,,,,,,,,,,,,,,,,,,,,no session yet after post
+x,BubleQe,2122340252178325585,2026-11-16 09:45:21,KEL,KEL,,,,,,,,,,,,,,,,,,,,no Yahoo bars for symbol
+x,BubleQe,2122340252178325585,2026-11-16 09:45:21,KEL.TO,KEL.TO,15m,yes,2026-11-16 10:00,12.44,,,0.643,,0.884,,,,,,12.5500,,,,,no 5m/1d/close; SPY not trading at base; no volume baseline
+x,BubleQe,2122340252178325585,2026-11-16 09:45:21,OVV,OVV,15m,yes,2026-11-16 10:00,64.7438,,,-0.353,,0.172,,,,,,64.8550,,,,,no 5m/1d/close; SPY not trading at base; no volume baseline
+x,BubleQe,2122340900571607378,2026-11-16 09:47:56,AAV.TO,AAV.TO,,,,,,,,,,,,,,,,,,,,no session yet after post
+x,BubleQe,2122340900571607378,2026-11-16 09:47:56,KEL.TO,KEL.TO,15m,yes,2026-11-16 10:00,12.44,,,0.643,,0.884,,,,,,12.5500,,,,,no 5m/1d/close; SPY not trading at base; no volume baseline
+x,BubleQe,2122340900571607378,2026-11-16 09:47:56,TOU.TO,TOU.TO,15m,yes,2026-11-16 10:00,65.35,,,-0.061,,0.689,,,,,,65.8000,,,,,no 5m/1d/close; SPY not trading at base; no volume baseline
+x,BubleQe,2122343115931697284,2026-11-16 09:56:44,CNQ,CNQ,15m,yes,2026-11-16 10:00,48.66,,,-0.380,,-0.514,,,,,,48.4100,,,,,no 5m/1d/close; SPY not trading at base; no volume baseline
+x,BubleQe,2122343115931697284,2026-11-16 09:56:44,KEL.TO,KEL.TO,15m,yes,2026-11-16 10:00,12.44,,,0.643,,0.884,,,,,,12.5500,,,,,no 5m/1d/close; SPY not trading at base; no volume baseline
+x,BubleQe,2122343115931697284,2026-11-16 09:56:44,OVV,OVV,15m,yes,2026-11-16 10:00,64.7438,,,-0.353,,0.172,,,,,,64.8550,,,,,no 5m/1d/close; SPY not trading at base; no volume baseline
+x,BubleQe,2122343115931697284,2026-11-16 09:56:44,TOU.TO,TOU.TO,15m,yes,2026-11-16 10:00,65.35,,,-0.061,,0.689,,,,,,65.8000,,,,,no 5m/1d/close; SPY not trading at base; no volume baseline
+x,BubleQe,2122343115931697284,2026-11-16 09:56:44,WCP.TO,WCP.TO,15m,yes,2026-11-16 10:00,16.96,,,-0.354,,0.826,,,,,,17.1000,,,,,no 5m/1d/close; SPY not trading at base; no volume baseline
+x,BubleQe,2122363542620033181,2026-11-16 11:17:54,CNQ,CNQ,15m,yes,2026-11-16 11:30,48.435,,,-0.165,,,,,,,,,,,,,no 5m/1h/1d/close; no volume baseline
+x,BubleQe,2122363542620033181,2026-11-16 11:17:54,CNQ.TO,CNQ.TO,,,,,,,,,,,,,,,,,,,,no session yet after post
+x,BubleQe,2122363542620033181,2026-11-16 11:17:54,SHEL,SHEL,15m,yes,2026-11-16 11:30,98.155,,,-0.087,,,,,,,,,,,,,no 5m/1h/1d/close; no volume baseline
+x,BubleQe,2122363542620033181,2026-11-16 11:17:54,TOU,TOU.TO,15m,yes,2026-11-16 11:30,65.48,,,-0.229,,,,,,,,,,,,,no 5m/1h/1d/close; no volume baseline
+x,BubleQe,2122363542620033181,2026-11-16 11:17:54,TOU.TO,TOU.TO,15m,yes,2026-11-16 11:30,65.48,,,-0.229,,,,,,,,,,,,,no 5m/1h/1d/close; no volume baseline
+x,BubleQe,2122364525261504839,2026-11-16 11:21:49,AAV,AAV,,,,,,,,,,,,,,,,,,,,no Yahoo bars for symbol (http 404)
+x,BubleQe,2122364525261504839,2026-11-16 11:21:49,CNQ,CNQ,15m,yes,2026-11-16 11:30,48.435,,,-0.165,,,,,,,,,,,,,no 5m/1h/1d/close; no volume baseline
+x,BubleQe,2122364525261504839,2026-11-16 11:21:49,TOU.TO,TOU.TO,15m,yes,2026-11-16 11:30,65.48,,,-0.229,,,,,,,,,,,,,no 5m/1h/1d/close; no volume baseline
+x,BubleQe,2122365169217229057,2026-11-16 11:24:22,AAV.TO,AAV.TO,,,,,,,,,,,,,,,,,,,,no session yet after post
+x,BubleQe,2122365169217229057,2026-11-16 11:24:22,CNQ.TO,CNQ.TO,,,,,,,,,,,,,,,,,,,,no session yet after post
+x,BubleQe,2122365169217229057,2026-11-16 11:24:22,TOU.TO,TOU.TO,15m,yes,2026-11-16 11:30,65.48,,,-0.229,,,,,,,,,,,,,no 5m/1h/1d/close; no volume baseline
+x,BubleQe,2122365169217229057,2026-11-16 11:24:22,TPZ.TO,TPZ.TO,15m,yes,2026-11-16 11:30,29.02,,,0.069,,,,,,,,,,,,,no 5m/1h/1d/close; no volume baseline
